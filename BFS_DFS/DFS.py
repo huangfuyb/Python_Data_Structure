@@ -25,6 +25,25 @@ def DFS(gragh, root):
         print(key)
 
 
+def DFS_fix(gragh,root):
+
+    stack = []
+    stack.append(root)
+    s = set()
+    while len(stack) > 0:
+
+        key = stack.pop()
+        if key not in s:
+            s.add(key)
+            node = gragh[key]
+            for i in node:
+                if i not in s:
+                    stack.append(i)
+            print(key)
+
+
 if __name__ == '__main__':
 
     DFS(gragh, 'A')
+    print('\t')
+    DFS_fix(gragh, 'A')
