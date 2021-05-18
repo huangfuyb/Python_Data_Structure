@@ -104,7 +104,7 @@ class BST:
 
 if __name__ == '__main__':
     # tree = BST([4, 6, 7, 9, 2, 1, 3, 5, 8])
-    tree = BST([17, 5, 35, 2, 11])
+    tree = BST([8, 6, 10, 5, 5, 7, 9, 11])
     tree.pre_order(tree.root)
     print('')
     tree.pre_order_no_rec(tree.root)
